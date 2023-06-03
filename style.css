@@ -3,18 +3,46 @@
     margin: 0;
     overflow-x: hidden;
 }
-.game{
-    width: 500px;
-    height: 200px;
-    border: 1px solid black;
-    margin: auto;
+p{
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
 }
-#character{
-    width: 20px;
-    height: 50px;
-    background-color: red;
+.game{
+    width: 700px;
+    height: 300px;
+    border: 3px solid rgb(16, 40, 118);
+    margin: auto;
+    margin-top: 50px;
+    background: url(./images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+#img1{
+    width: 40px;
+    height: 90px;
+}
+#img2{
+    width: 30px;
+    height: 30px;
+}
+#img3{
+    width: 80px;
+    height: 145px;
+}
+
+#mario{
+    width: 50px;
+    height: 100px;
     position:relative;
-    top: 150px;
+    top: 185px;
+    left: 17px;
+}
+#dragon{
+    width: 90px;
+    height: 150px;
+    position: relative;
+    top: 10px;
+    left: 605px;
 }
 .animate{
     animation: jump 0.3s linear;
@@ -26,17 +54,16 @@
     100%{top: 150px;}
 }
 
-#block{
-    background-color: blue;
-    width: 20px;
-    height: 20px;
+#fire{
+    width: 40px;
+    height: 40px;
     position: relative;
-    top: 130px;
-    left: 500px;
+    top: 110px;
+    left: 630px;
     animation: block 1s infinite linear;
 }
 @keyframes block{
-    0%{left: 500px}
+    0%{left: 630px}
     100%{left: -20px}
 }
 p{

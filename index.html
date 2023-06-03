@@ -2,15 +2,29 @@
 <html lang="en" onclick="jump()">
 <head>
     <meta charset="UTF-8">
-    <title>Jump Game</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Mario Jump Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="game">
-        <div id="character"></div>
-        <div id="block"></div>
-    </div>
-    <p>Score: <span id="scoreSpan"></span></p>
+        <div id="mario">
+            <img id ="img1" src="./images/Mario.png" alt="Mario">
+        </div>
+        <div id="fire">
+            <img id="img2" src="./images/fire.png" alt="Fireball">
+        </div>
+        <div id="dragon">
+            <img id="img3" src="./images/Dragon.png" alt="Dragon">
+        </div>
+    </div><br>
+    <p> 
+        Press Click to jump <br><br>
+
+        Score: <span id="scoreSpan"></span>
+    </p>
 </body>
 <script src="script.js"></script>
 </html>
